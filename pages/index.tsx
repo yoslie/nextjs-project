@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
+
+import HeroBanner from '../components/HeroBanner';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +12,7 @@ export default function Home() {
         <title>Yoslie Portofolio</title>
       </Head>
       <main>
-        Under development
+        <HeroBanner />
       </main>
     </>
   )
