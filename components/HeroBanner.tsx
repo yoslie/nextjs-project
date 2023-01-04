@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logoBlack from '../public/image/logo-black.svg'
+import Typical from 'react-typical';
 
 const HeroBanner: React.FC = () =>{
   return (
@@ -17,9 +18,18 @@ const HeroBanner: React.FC = () =>{
           <div className='mt-32 pl-12'>
             <h1 className='text-xl'>Frontend Engineer</h1>
             <div className='bg-yellow-500 h-[2px] w-3/4 my-4' />
-            <p className='text-gray-400 w-1/2 font-Josefin'>
-              First, solve the problem. Then, write the code.
-            </p>
+            <div className='text-gray-400 w-1/2 font-Josefin'>
+              <Typical
+                steps={[
+                  'First, solve the problem.',
+                  2000,
+                  'First, solve the problem. Then, write the code.',
+                  2000,
+                ]}
+                wrapper="p"
+                loop={Infinity}
+              />
+            </div>
           </div>
           <div className='mt-48 pl-12'>
             <div className='text-4xl text-gray-400 font-Roboto-condensed font-medium'>
