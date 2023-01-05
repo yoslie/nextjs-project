@@ -43,7 +43,7 @@ const Experience: React.FC = () =>{
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null)
 
   return (
-    <div className='h-screen relative bg-white'>
+    <div className='relative bg-white'>
       <div className='p-16'>
         <div className='flex justify-between'>
           <h1 className='text-4xl font-Roboto-condensed font-bold uppercase'>
