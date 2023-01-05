@@ -13,10 +13,14 @@ const HeroBanner: React.FC = () =>{
               className='h-10 w-10'
               src={logoBlack}
             />
-            <div className='pl-2'>Personal Portofolio</div>
+            <div className='pl-2 text-white'>
+              Personal Portofolio
+            </div>
           </div>
           <div className='mt-32 pl-12'>
-            <h1 className='text-xl'>Frontend Engineer</h1>
+            <h1 className='text-xl text-white'>
+              Frontend Engineer
+            </h1>
             <div className='bg-yellow-500 h-[2px] w-3/4 my-4' />
             <div className='text-gray-400 w-1/2 font-Josefin'>
               <Typical
@@ -35,7 +39,7 @@ const HeroBanner: React.FC = () =>{
             <div className='text-4xl text-gray-400 font-Roboto-condensed font-medium'>
               HI, I AM
             </div>
-            <div className='text-8xl font-Roboto-condensed font-semibold'>
+            <div className='text-8xl text-white font-Roboto-condensed font-semibold'>
               YOSLIE
             </div>
           </div>
