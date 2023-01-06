@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import logoBlack from '../public/image/logo-black.svg'
-import Typical from 'react-typical'
+import { TypeAnimation } from 'react-type-animation'
 
 const HeroBanner: React.FC = () =>{
   return (
@@ -23,15 +23,16 @@ const HeroBanner: React.FC = () =>{
             </h1>
             <div className='bg-yellow-500 h-[2px] w-3/4 my-4' />
             <div className='text-gray-400 w-1/2 font-Josefin'>
-              <Typical
-                steps={[
+              <TypeAnimation
+                sequence={[
                   'First, solve the problem.',
                   2000,
                   'First, solve the problem. Then, write the code.',
                   2000,
                 ]}
-                wrapper="p"
-                loop={Infinity}
+                wrapper="div"
+                cursor={true}
+                repeat={Infinity}
               />
             </div>
           </div>
