@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -34,7 +35,7 @@ const Project: React.FC = () =>{
       <div className='flex flex-col gap-8'>
         {data.map((item) => (
           <div key={item.id} className='bg-gray-700 p-8 rounded-md grid grid-cols-2 gap-8'>
-            <div className='w-full h-64 p-4 flex justify-center items-center bg-white rounded-md'>
+            <div className='w-full h-64 p-8 flex justify-center items-center bg-white rounded-md'>
               <Image
                 alt={`Logo ${item.title}`}
                 width="0"

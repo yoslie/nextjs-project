@@ -1,9 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
 import React, { useState } from 'react'
+import Image from 'next/image'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import Image from 'next/image'
 
 const data = [
   {
@@ -73,8 +74,6 @@ const Experience: React.FC = () =>{
         spaceBetween={50}
         slidesPerView={4}
         navigation={{ prevEl, nextEl }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {data.slice(0).reverse().map((item) => (
           <SwiperSlide key={item.id} className="my-4 rounded-lg bg-white shadow w-64 break-words">
