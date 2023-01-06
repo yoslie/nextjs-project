@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import logoBlack from '../public/image/logo-black.svg'
-import Typical from 'react-typical';
+import Typical from 'react-typical'
 
 const HeroBanner: React.FC = () =>{
   return (
