@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 
 import HeroBanner from '../components/HeroBanner'
 import Experience from '../components/Experience'
+import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Footer from '../components/Footer'
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <HeroBanner />
         <Experience />
+        <Skills />
         <Project />
         <Footer />
       </main>
