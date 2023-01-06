@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 
 import HeroBanner from '../components/HeroBanner'
 import Experience from '../components/Experience'
+import Project from '../components/Project'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <HeroBanner />
         <Experience />
+        <Project />
       </main>
     </>
   )
