@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import logoBlack from '../public/image/logo-black.svg'
 import { TypeAnimation } from 'react-type-animation'
 
 const HeroBanner: React.FC = () =>{
@@ -10,8 +9,9 @@ const HeroBanner: React.FC = () =>{
           <div className='flex items-center'>
             <Image
               alt="Yoslie logo"
-              className='h-10 w-10'
-              src={logoBlack}
+              width={24}
+              height={24}
+              src='/image/logo-black.svg'
             />
             <div className='pl-2 text-white'>
               Personal Portofolio
