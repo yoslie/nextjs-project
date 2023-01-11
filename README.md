@@ -1,5 +1,6 @@
 
 # Personal Web Portofolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad8f0b98-7eab-4d2d-a5a7-b1b8ff0b6280/deploy-status)](https://app.netlify.com/sites/yoslie/deploys)
 
 A simple project to present my Portofolio.
 This is a [`Next.js`](https://nextjs.org/) project styled with [`Tailwind CSS`](https://tailwindcss.com/).
