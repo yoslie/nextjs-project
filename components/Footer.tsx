@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer: React.FC = () =>{
   return (
-    <footer id="footer" className='p-16'>
+    <footer id="contact" className='p-16'>
       <div className='flex flex-col gap-10 mt-8'>
         <div className='flex flex-row gap-3'>
           <Image

@@ -44,7 +44,7 @@ const Experience: React.FC = () =>{
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null)
 
   return (
-    <div className='p-16 bg-white'>
+    <div id='experience' className='p-16 bg-white'>
       <div className='flex justify-between'>
         <h1 className='text-4xl font-Roboto-condensed font-bold uppercase'>
           Experience

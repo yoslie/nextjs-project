@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
+import Navbar from '../components/Navbar'
 import HeroBanner from '../components/HeroBanner'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
@@ -18,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Checkout my nextjs project web portofolio." key="desc" />
         <meta
           property="og:description"
-          content="Checkout my Nextjs project web portofolio"
+          content="Checkout my Next.js project web portofolio"
         />
         <meta
           property="og:image"
@@ -26,6 +27,7 @@ export default function Home() {
         />
       </Head>
       <main>
+        <Navbar />
         <HeroBanner />
         <Experience />
         <Skills />

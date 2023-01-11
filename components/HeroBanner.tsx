@@ -7,17 +7,6 @@ const HeroBanner: React.FC = () =>{
     <div className='h-screen relative bg-white'>
       <div className='absolute inset-y-0 left-0 w-full'>
         <div className='w-3/4 h-full bg-gradient-to-r from-black via-black to-transparent py-8 px-8'>
-          <div className='flex items-center'>
-            <Image
-              alt="Yoslie logo"
-              width={24}
-              height={24}
-              src='/image/logo-black.svg'
-            />
-            <div className='pl-2 text-white'>
-              Personal Portofolio
-            </div>
-          </div>
           <div className='mt-32 pl-12'>
             <h1 className='text-xl text-white'>
               Frontend Engineer

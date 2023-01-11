@@ -28,7 +28,7 @@ const data = [
 
 const Project: React.FC = () =>{
   return (
-    <div className='bg-black p-16 h-screen overflow-scroll'>
+    <div id='project' className='bg-black p-16 h-screen overflow-scroll'>
       <h1 className='text-4xl font-Roboto-condensed font-bold uppercase text-white mb-12'>
         Project
       </h1>
