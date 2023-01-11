@@ -14,6 +14,16 @@ export default function Home() {
     <>
       <Head>
         <title>Yoslie Portofolio</title>
+        <meta property="og:title" content="Yoslie's Personal Web Portofolio" key="title" />
+        <meta name="description" content="Checkout my nextjs project web portofolio." key="desc" />
+        <meta
+          property="og:description"
+          content="Checkout my Nextjs project web portofolio"
+        />
+        <meta
+          property="og:image"
+          content="/image/profile.jpg"
+        />
       </Head>
       <main>
         <HeroBanner />
