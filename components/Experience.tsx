@@ -21,18 +21,24 @@ const data = [
   },
   {
     id: 3,
+    date: '2017 - 2018',
+    title: 'Telkom University',
+    role: 'Teaching Assistant Data & Broadband Networking',
+  },
+  {
+    id: 4,
     date: 'July 2018',
     title: 'Telkom DDS (Unify Project)',
     role: 'Application Tester (Freelance)',
   },
   {
-    id: 4,
+    id: 5,
     date: 'November 2019 - March 2020',
     title: 'PT. Gigaming Intermedia Solusindo',
     role: 'Frontend Engineer',
   },
   {
-    id: 5,
+    id: 6,
     date: 'May 2020 - Now',
     title: 'Jabar Digital Service',
     role: 'Frontend Engineer',
@@ -44,7 +50,7 @@ const Experience: React.FC = () =>{
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null)
 
   return (
-    <div id='experience' className='p-16 bg-white'>
+    <div id='experience' className='p-8 bg-white lg:p-16'>
       <div className='flex justify-between'>
         <h1 className='text-4xl font-Roboto-condensed font-bold uppercase'>
           Experience
@@ -72,12 +78,25 @@ const Experience: React.FC = () =>{
         modules={[Navigation]}
         className="mt-8"
         spaceBetween={50}
-        slidesPerView={4}
+        breakpoints={{
+          540: {
+            width: 540,
+            slidesPerView: 2,
+          },
+          720: {
+            width: 720,
+            slidesPerView: 3,
+          },
+          960: {
+            width: 960,
+            slidesPerView: 4,
+          },
+        }}
         navigation={{ prevEl, nextEl }}
       >
         {data.slice(0).reverse().map((item) => (
           <SwiperSlide key={item.id} className="my-4 rounded-lg bg-white shadow w-64 break-words">
-            <div className="flex flex-col justify-between h-64 p-6">
+            <div className="flex flex-col justify-between h-64 p-6 ">
               <div className="text-sm font-medium text-gray-500">
                 {item.date}
               </div>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer: React.FC = () =>{
   return (
-    <footer id="contact" className='p-16'>
+    <footer id="contact" className='p-8 lg:p-16'>
       <div className='flex flex-col gap-10 mt-8'>
         <div className='flex flex-row gap-3'>
           <Image
@@ -15,7 +15,7 @@ const Footer: React.FC = () =>{
           />
           <p className='font-Josefin'>Feel free to contact me at</p>
         </div>
-        <p className='text-4xl uppercase font-Roboto-condensed underline decoration-yellow-300'>
+        <p className='text-3xl sm:text-4xl uppercase font-Roboto-condensed underline decoration-yellow-300'>
           yoslie.tan@gmail.com
         </p>
       </div>

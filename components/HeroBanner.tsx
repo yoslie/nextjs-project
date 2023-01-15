@@ -7,7 +7,7 @@ const HeroBanner: React.FC = () =>{
     <div className='h-screen relative bg-white'>
       <div className='absolute inset-y-0 left-0 w-full'>
         <div className='w-3/4 h-full bg-gradient-to-r from-black via-black to-transparent py-8 px-8'>
-          <div className='mt-32 pl-12'>
+          <div className='mt-32 pl-0 lg:pl-12'>
             <h1 className='text-xl text-white'>
               Frontend Engineer
             </h1>
@@ -26,7 +26,7 @@ const HeroBanner: React.FC = () =>{
               />
             </div>
           </div>
-          <div className='mt-48 pl-12'>
+          <div className='mt-48 pl-0 lg:pl-12'>
             <div className='text-4xl text-gray-400 font-Roboto-condensed font-medium'>
               HI, I AM
             </div>

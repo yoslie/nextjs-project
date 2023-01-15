@@ -47,7 +47,7 @@ const Skills: React.FC = () =>{
   }
   
   return (
-    <div id='skills' className='p-16 bg-white'>
+    <div id='skills' className='p-8 bg-white lg:p-16'>
       <h1 className='text-4xl font-Roboto-condensed font-bold uppercase'>
         My Skills
       </h1>

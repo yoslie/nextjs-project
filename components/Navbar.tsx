@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Navbar: React.FC = () =>{
   return (
-    <nav className='flex items-center justify-between w-screen h-12 fixed top-0 z-50 bg-transparent sm:h-16 lg:h-20 transition-colors ease-brand duration-250 p-12'>
+    <nav className='flex items-center justify-between w-screen h-12 fixed top-0 z-50 bg-transparent sm:h-16 lg:h-20 transition-colors ease-brand duration-250 p-6 lg:p-12'>
       <div className='flex'>
         <Image
           alt="Yoslie logo"

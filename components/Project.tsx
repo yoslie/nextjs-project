@@ -28,14 +28,14 @@ const data = [
 
 const Project: React.FC = () =>{
   return (
-    <div id='project' className='bg-black p-16 h-screen overflow-scroll'>
+    <div id='project' className='bg-black p-8 h-screen overflow-scroll lg:p-16'>
       <h1 className='text-4xl font-Roboto-condensed font-bold uppercase text-white mb-12'>
         Project
       </h1>
       <div className='flex flex-col gap-8'>
         {data.map((item) => (
-          <div key={item.id} className='bg-gray-700 p-8 rounded-md grid grid-cols-2 gap-8'>
-            <div className='w-full h-64 p-8 flex justify-center items-center bg-white rounded-md'>
+          <div key={item.id} className='bg-gray-700 p-8 rounded-md flex flex-col md:grid sm:grid-cols-3 lg:grid-cols-2 gap-8'>
+            <div className='w-full h-64 p-8 col-span-1 flex justify-center items-center bg-white rounded-md'>
               <Image
                 alt={`Logo ${item.title}`}
                 width="0"
@@ -44,7 +44,7 @@ const Project: React.FC = () =>{
                 src={item.image}
               />
             </div>
-            <div className='flex flex-col justify-center text-white space-y-6'>
+            <div className='flex flex-col col-span-2 lg:col-span-1 justify-center text-white space-y-6'>
               <h2 className='text-xl font-Roboto-condensed font-bold'>
                 {item.title}
               </h2>
